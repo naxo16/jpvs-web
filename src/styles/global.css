@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @variant hover (&:hover);
-@variant group-hover (:merge(.group):hover &);
+@variant group-hover (.group:hover &);
 @theme {
   --color-surface: transparent;
   --color-on-surface: #e4e2e4;

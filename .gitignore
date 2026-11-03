@@ -18,6 +18,11 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Reports & analysis
+lighthouse-report.json
+.sonar/
+.sonar-config.json
+
 # Editor directories and files
 .idea
 .vscode/

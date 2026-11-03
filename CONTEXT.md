@@ -27,3 +27,16 @@ Al trabajar en este proyecto, sigue estas reglas:
 
 5. **Rutas Dinámicas:**
    - El ecosistema incluye la landing y páginas hijas para cada servicio detallado generadas mediante `getStaticPaths` en la ruta `src/pages/servicios/[servicio].astro`.
+
+6. **Optimización SEO y Metadatos:**
+   - Se utiliza la integración oficial `@astrojs/sitemap` configurada en `astro.config.mjs` apuntando al dominio de producción.
+   - `Layout.astro` centraliza las etiquetas clave para el SEO: Open Graph para redes sociales, verificación de Google Search Console, y un script JSON-LD de Schema.org configurado como `Plumber` localizado específicamente en **Cauquenes**. 
+   - **Regla Estricta:** No alterar la geolocalización a lugares como "Santiago", ya que el SEO de la landing depende de su foco en Cauquenes y alrededores.
+
+7. **Compatibilidad Móvil (GSAP y Tailwind v4):**
+   - **ScrollTrigger en Móviles:** Para que las animaciones GSAP funcionen en iOS/Móvil, la clase `overflow-x-hidden` NO debe aplicarse a la etiqueta `<body>`. Siempre debe estar en un contenedor `<div>` envolvente. Además, jamás utilizar `scroll-behavior: smooth` en CSS ya que corrompe los cálculos de GSAP ScrollTrigger en móviles.
+   - **Interacciones Táctiles (Hovers):** Tailwind v4 por defecto inhabilita los efectos `hover:` en pantallas táctiles (`@media (hover: hover)`). Para mantener un diseño vivo con feedback táctil al tocar botones o tarjetas, se aplicó un override explícito en `global.css` (`@variant hover (&:hover);`).
+
+8. **Componentes Externos y Legales:**
+   - **Mapa Gratuito:** El mapa en `Coverage.astro` se resuelve usando un `iframe` base de Google Maps. Para lograr el estilo "Dark Mode" sin recurrir a la API de pago (Google Maps JS API), se utiliza un hack CSS sobre el iframe: `filter: invert(90%) hue-rotate(180deg)`.
+   - **Cumplimiento Legal:** El sitio incluye `politicas-de-privacidad.astro` y `terminos-y-condiciones.astro` redactados bajo leyes chilenas (Ley 19.628 de Privacidad y 19.496 del Consumidor) e ISO 27001. Estipulan explícitamente que no hay recopilación automatizada de datos (0 cookies nativas).
