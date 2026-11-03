@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import FAQ from '../components/FAQ.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Preguntas Frecuentes | JPVS Gasfiter Cauquenes" 
+  description="Respuestas claras a dudas frecuentes sobre atención de emergencias, atención fines de semana, boleta de honorarios y presupuestos en Cauquenes."
+>
+  <Navbar />
+  
+  <main class="min-h-screen pt-24 pb-16">
+    <div class="max-w-[1200px] mx-auto px-grid-gutter pt-8 text-center md:text-left">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 text-xs font-bold uppercase tracking-wider mb-4">
+        Centro de Ayuda
+      </span>
+      <h1 class="font-display-lg text-4xl md:text-5xl lg:text-6xl text-on-surface mb-4">
+        Preguntas Frecuentes
+      </h1>
+      <p class="font-body-lg text-on-surface-variant max-w-2xl text-lg mb-8">
+        Respuestas directas a las inquietudes más comunes de nuestros clientes en Cauquenes.
+      </p>
+    </div>
+
+    <FAQ />
+
+    <section aria-label="Llamado a la acción" class="py-16 px-grid-gutter max-w-[1200px] mx-auto text-center">
+      <div class="bg-surface-container rounded-3xl border border-white/10 p-8 md:p-12 shadow-xl">
+        <h2 class="font-headline-md text-3xl font-bold text-on-surface mb-4">¿Tiene otra consulta particular?</h2>
+        <p class="font-body-md text-on-surface-variant max-w-xl mx-auto mb-8">
+          Estamos a un mensaje de distancia. Escríbanos y resolveremos cualquier inquietud técnica de inmediato.
+        </p>
+        <a href="/contacto" class="inline-flex items-center justify-center bg-secondary text-on-secondary px-8 py-3.5 rounded-xl font-bold hover:bg-secondary-fixed transition-colors shadow-lg">
+          Contactar Ahora
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

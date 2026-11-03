@@ -1,0 +1,109 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout 
+  title="Servicios Especializados en Cauquenes | JPVS Gasfiter" 
+  description="Servicios profesionales de gasfitería, soldadura, electricidad básica y construcción general en Cauquenes y alrededores. Calidad garantizada y presupuesto sin sorpresas."
+>
+  <Navbar />
+  
+  <main class="min-h-screen pt-28 pb-20 px-grid-gutter relative overflow-hidden">
+    <!-- Glow ambient -->
+    <div class="absolute top-20 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-[1200px] mx-auto relative z-10">
+      
+      <!-- Page Header -->
+      <header class="text-center md:text-left mb-16 pt-8">
+        <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 text-xs font-bold uppercase tracking-wider mb-4">
+          Catálogo Técnico
+        </span>
+        <h1 class="font-display-lg text-4xl md:text-5xl lg:text-6xl text-on-surface mb-6">
+          Servicios Especializados
+        </h1>
+        <p class="font-body-lg text-on-surface-variant max-w-2xl text-lg">
+          Maestría técnica aplicada a cada detalle de su hogar o empresa en Cauquenes. Soluciones duraderas, seguras y con garantía escrita.
+        </p>
+      </header>
+
+      <!-- Services Cards Grid -->
+      <section aria-label="Listado de servicios" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+        
+        <!-- Service Card 1 -->
+        <a href="/servicios/gasfiteria" class="bg-surface-container rounded-2xl p-8 border border-white/10 hover:border-secondary transition-all duration-300 group relative overflow-hidden flex flex-col h-full service-card cursor-pointer hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(74,142,255,0.15)]">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full pointer-events-none group-hover:bg-secondary/10 transition-colors"></div>
+          <span class="material-symbols-outlined text-secondary text-[48px] mb-6 block">plumbing</span>
+          <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-on-surface mb-3">Gasfitería</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+            Reparación de filtraciones, instalación de sanitarios, destapes y mantención de redes de agua y gas.
+          </p>
+          <span class="text-secondary font-bold text-sm inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Ver detalles <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </span>
+        </a>
+        
+        <!-- Service Card 2 -->
+        <a href="/servicios/soldadura" class="bg-surface-container rounded-2xl p-8 border border-white/10 hover:border-secondary transition-all duration-300 group relative overflow-hidden flex flex-col h-full service-card cursor-pointer hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(74,142,255,0.15)]">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full pointer-events-none group-hover:bg-secondary/10 transition-colors"></div>
+          <span class="material-symbols-outlined text-secondary text-[48px] mb-6 block">hardware</span>
+          <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-on-surface mb-3">Soldadura</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+            Estructuras metálicas, rejas, portones, reparaciones industriales y domésticas con acabados precisos.
+          </p>
+          <span class="text-secondary font-bold text-sm inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Ver detalles <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </span>
+        </a>
+        
+        <!-- Service Card 3 -->
+        <a href="/servicios/electricidad" class="bg-surface-container rounded-2xl p-8 border border-white/10 hover:border-secondary transition-all duration-300 group relative overflow-hidden flex flex-col h-full service-card cursor-pointer hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(74,142,255,0.15)]">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full pointer-events-none group-hover:bg-secondary/10 transition-colors"></div>
+          <span class="material-symbols-outlined text-secondary text-[48px] mb-6 block">electric_bolt</span>
+          <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-on-surface mb-3">Electricidad Básica</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+            Instalación de enchufes, luminarias, detección de cortes, cambio de automáticos y cableado seguro.
+          </p>
+          <span class="text-secondary font-bold text-sm inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Ver detalles <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </span>
+        </a>
+        
+        <!-- Service Card 4 -->
+        <a href="/servicios/construccion" class="bg-surface-container rounded-2xl p-8 border border-white/10 hover:border-secondary transition-all duration-300 group relative overflow-hidden flex flex-col h-full service-card cursor-pointer hover:-translate-y-1 hover:shadow-[0_12px_30px_rgba(74,142,255,0.15)]">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-full pointer-events-none group-hover:bg-secondary/10 transition-colors"></div>
+          <span class="material-symbols-outlined text-secondary text-[48px] mb-6 block">home_repair_service</span>
+          <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-on-surface mb-3">Construcción General</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-6">
+            Ampliaciones, radieres, tabiquería, pintura y terminaciones con estándar profesional y limpieza.
+          </p>
+          <span class="text-secondary font-bold text-sm inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+            Ver detalles <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </span>
+        </a>
+      </section>
+
+      <!-- Trust & Quality Banner -->
+      <div class="bg-surface-container rounded-3xl border border-white/10 p-8 md:p-12 mb-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-xl">
+        <div class="max-w-xl text-center md:text-left">
+          <h2 class="font-headline-md text-2xl md:text-3xl font-bold text-on-surface mb-3">
+            ¿Necesita un trabajo personalizado o emergencia?
+          </h2>
+          <p class="font-body-md text-on-surface-variant">
+            Evaluamos en terreno en Cauquenes y zonas aledañas con total transparencia y presupuesto previo sin compromisos.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+          <a href="/contacto" class="inline-flex items-center justify-center bg-secondary text-on-secondary px-8 py-3.5 rounded-xl font-bold hover:bg-secondary-fixed transition-colors shadow-lg text-center">
+            Solicitar Presupuesto
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  
+  <Footer />
+</Layout>

@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Contact from '../components/Contact.astro';
+import Coverage from '../components/Coverage.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Contacto y Cotizaciones | JPVS Gasfiter Cauquenes" 
+  description="Canales oficiales de contacto para JPVS Gasfiter en Cauquenes. WhatsApp directo, atención telefónica, horarios y cobertura de servicios."
+>
+  <Navbar />
+  
+  <main class="min-h-screen pt-24 pb-16">
+    <div class="max-w-[1200px] mx-auto px-grid-gutter pt-8 text-center md:text-left">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary border border-secondary/20 text-xs font-bold uppercase tracking-wider mb-4">
+        Canales Directos
+      </span>
+      <h1 class="font-display-lg text-4xl md:text-5xl lg:text-6xl text-on-surface mb-4">
+        Contacto y Atención al Cliente
+      </h1>
+      <p class="font-body-lg text-on-surface-variant max-w-2xl text-lg mb-8">
+        Comuníquese directamente para resolver dudas, cotizar presupuestos o solicitar atención técnica en Cauquenes.
+      </p>
+    </div>
+
+    <Contact />
+    <Coverage />
+  </main>
+  
+  <Footer />
+</Layout>
